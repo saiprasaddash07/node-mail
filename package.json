@@ -4,12 +4,12 @@
   "description": "This is a recurring mail app build using MERN stack",
   "main": "index.js",
   "scripts": {
-    "start": "node backend/server",
-    "server": "nodemon backend/server",
-    "client": "npm start --prefix frontend",
+    "start": "node backend-folder/server",
+    "server": "nodemon backend-folder/server",
+    "client": "npm start --prefix frontend-folder",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node backend/seeder.js",
-    "data:destroy": "node backend/seeder.js -d",
+    "data:import": "node backend-folder/seeder.js",
+    "data:destroy": "node backend-folder/seeder.js -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sai Prasad Dash",
